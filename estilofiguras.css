@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #111;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.contenedor-principal {
+    width: 90%;
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.descripcion {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+    margin-bottom: 35px;
+}
+
+.selector-contenedor {
+    position: relative;
+}
+
+.boton {
+    background-color: white;
+    border: 2px solid #111;
+    border-radius: 8px;
+    padding: 15px 25px;
+    min-width: 220px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #acd7fa;
+}
+
+.menu-figuras {
+    display: none;
+
+    position: absolute;
+
+    width: 100%;
+
+    background-color:white;
+
+    border: 3px solid #111;
+
+    border-radius: 8px;
+
+    z-index: 10;
+}
+
+.menu-figuras.mostrar {
+    display: block;
+}
+
+.opcion-figura {
+    display: block;
+
+    width: 100%;
+
+    background-color: white;
+
+    border: none;
+
+    border-radius: 3px;
+
+    border-bottom: 1px solid #aaa;
+
+    padding: 15px;
+
+    text-align: left;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.opcion-figura:hover {
+    background-color: #acd7fa;
+}
+
+.informacion {
+    margin-bottom: 20px;
+}
+
+.informacion p {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.mensaje {
+    border: 2px solid #111;
+
+    border-radius: 8px;
+
+    padding: 15px;
+
+    max-width: 500px;
+
+    margin: auto;
+
+    font-size: 20px;
+}
+
+.pantalla {
+    min-height: 330px;
+
+background-color: white;
+
+    border: 2px solid #111;
+    border-radius: 10px;
+
+    margin-top: 25px;
+    padding: 35px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 60px;
+
+    flex-wrap: wrap;
+}
+
+.figura {
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+    display: block;
+}
